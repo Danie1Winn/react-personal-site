@@ -1,7 +1,7 @@
 {
   "name": "react-personal-site",
   "version": "0.1.0",
-  "homepage": "https://github.com/Danie1Winn/Danie1Winn.github.io",
+  "homepage": "https://Danie1Winn.github.io/react-personal-site.git",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -26,9 +26,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

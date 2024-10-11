@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-personal-site.git/static/css/main.a4829df4.css",
-    "main.js": "/react-personal-site.git/static/js/main.938418b4.js",
-    "static/js/453.ed60d931.chunk.js": "/react-personal-site.git/static/js/453.ed60d931.chunk.js",
-    "static/media/logo-s.png": "/react-personal-site.git/static/media/logo-s.bc32c2db6a21ed494cfa.png",
-    "static/media/ProggySmall.ttf": "/react-personal-site.git/static/media/ProggySmall.4ee67b7c24e58c668f90.ttf",
-    "static/media/LaBelleAurore.woff": "/react-personal-site.git/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
-    "static/media/logo_sub.png": "/react-personal-site.git/static/media/logo_sub.525d79e75f2e2349325c.png",
-    "static/media/LaBelleAurore.woff2": "/react-personal-site.git/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
-    "static/media/CoolveticaRg-Regular.woff": "/react-personal-site.git/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
-    "static/media/CoolveticaRg-Regular.woff2": "/react-personal-site.git/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
-    "index.html": "/react-personal-site.git/index.html",
-    "main.a4829df4.css.map": "/react-personal-site.git/static/css/main.a4829df4.css.map",
-    "main.938418b4.js.map": "/react-personal-site.git/static/js/main.938418b4.js.map",
-    "453.ed60d931.chunk.js.map": "/react-personal-site.git/static/js/453.ed60d931.chunk.js.map"
+    "main.css": "/react-personal-site/static/css/main.fb4e7e7f.css",
+    "main.js": "/react-personal-site/static/js/main.ce2f3801.js",
+    "static/js/453.ed60d931.chunk.js": "/react-personal-site/static/js/453.ed60d931.chunk.js",
+    "static/media/logo-s.png": "/react-personal-site/static/media/logo-s.bc32c2db6a21ed494cfa.png",
+    "static/media/ProggySmall.ttf": "/react-personal-site/static/media/ProggySmall.4ee67b7c24e58c668f90.ttf",
+    "static/media/LaBelleAurore.woff": "/react-personal-site/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
+    "static/media/logo_sub.png": "/react-personal-site/static/media/logo_sub.525d79e75f2e2349325c.png",
+    "static/media/LaBelleAurore.woff2": "/react-personal-site/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff": "/react-personal-site/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
+    "static/media/CoolveticaRg-Regular.woff2": "/react-personal-site/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/react-personal-site/index.html",
+    "main.fb4e7e7f.css.map": "/react-personal-site/static/css/main.fb4e7e7f.css.map",
+    "main.ce2f3801.js.map": "/react-personal-site/static/js/main.ce2f3801.js.map",
+    "453.ed60d931.chunk.js.map": "/react-personal-site/static/js/453.ed60d931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4829df4.css",
-    "static/js/main.938418b4.js"
+    "static/css/main.fb4e7e7f.css",
+    "static/js/main.ce2f3801.js"
   ]
 }

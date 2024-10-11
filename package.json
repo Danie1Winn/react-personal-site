@@ -1,7 +1,7 @@
 {
   "name": "react-personal-site",
   "version": "0.1.0",
-  "homepage": "https://Danie1Winn.github.io/react-personal-site.git",
+  "homepage": "https://Danie1Winn.github.io/react-personal-site",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

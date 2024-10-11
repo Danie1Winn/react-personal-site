@@ -1,8 +1,8 @@
 {
   "name": "react-personal-site",
   "version": "0.1.0",
-  "homepage": "https://Danie1Winn.github.io/react-personal-site",
-  "private": true,
+  "homepage": "https://danie1winn.github.io/react-personal-site",
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
@@ -14,7 +14,6 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
-    "gsap-trial": "^3.12.5",
     "loaders.css": "^0.1.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

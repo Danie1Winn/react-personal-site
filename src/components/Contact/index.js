@@ -94,11 +94,9 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='info-map'>
-                    Daniel Winn,
+                    Daniel Winn
                     <br />
-                    Long Beach,
-                    <br />
-                    California,
+                    Long Beach, CA
                     <br />
                     United States
                     <br />

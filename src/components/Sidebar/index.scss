@@ -83,6 +83,12 @@
           content: 'ABOUT';
         }
       }
+
+      a.resume-link {
+        &:after {
+          content: 'RESUME';
+        }
+      }
   
       a.contact-link {
         &:after {

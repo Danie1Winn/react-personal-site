@@ -5,8 +5,8 @@ import AnimatedLetters from '../AnimatedLetters';
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const [showCalculator, setShowCalculator] = useState(false); // State to toggle app popout
-    const [cardExpanded, setCardExpanded] = useState(false); // State to track whether the card is expanded
+    const [showCalculator, setShowCalculator] = useState(false);
+    const [cardExpanded, setCardExpanded] = useState(false);
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
@@ -17,22 +17,26 @@ const Portfolio = () => {
 
     useEffect(() => {
         if (showCalculator) {
-            // Disable body scrolling when the modal is open
             document.body.classList.add('no-scroll');
         } else {
-            // Re-enable scrolling when the modal is closed
             document.body.classList.remove('no-scroll');
         }
     }, [showCalculator]);
 
     const handleCardClick = () => {
         setShowCalculator(true);
-        setCardExpanded(true); // Expand the card when clicked
+        setCardExpanded(true);
     };
 
     const handleCloseModal = () => {
         setShowCalculator(false);
-        setCardExpanded(false); // Shrink the card when the modal is closed
+        setCardExpanded(false);
+    };
+
+    const handleModalClick = (e) => {
+        if (e.target.classList.contains('calculator-modal')) {
+            handleCloseModal();
+        }
     };
 
     return (
@@ -45,10 +49,8 @@ const Portfolio = () => {
                         idx={15}
                     />
                 </h1>
-
-                {/* Fuel Mix Calculator Card */}
                 <div
-                    className={`project-card ${cardExpanded ? 'expanded' : ''}`} // Conditionally apply 'expanded' class
+                    className={`project-card ${cardExpanded ? 'expanded' : ''}`}
                     onClick={handleCardClick}
                 >
                     <div className="card-content">
@@ -58,8 +60,8 @@ const Portfolio = () => {
                 </div>
 
                 {showCalculator && (
-                    <div className="calculator-modal">
-                        <div className="modal-content">
+                    <div className="calculator-modal" onClick={handleModalClick}>
+                        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                             <button className="close-button" onClick={handleCloseModal}>×</button>
                             <h2>Fuel Mix Calculator</h2>
                             <p>

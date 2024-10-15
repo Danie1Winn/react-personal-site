@@ -1,5 +1,5 @@
 body {
-    background-color: #282828; /* Ensure body background matches modal background */
+    background-color: #282828;
 }
 
 .portfolio-page {
@@ -57,7 +57,6 @@ body {
     color: #ccc;
 }
 
-/* Prevent body scroll when modal is open */
 .no-scroll {
     overflow: hidden;
 }
@@ -68,7 +67,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: transparent; /* No darker background */
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +76,7 @@ body {
 }
 
 .modal-content {
-    background-color: #282828; /* Matching background */
+    background-color: #282828;
     padding: 20px;
     border-radius: 10px;
     max-width: 900px;
@@ -87,7 +86,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    overflow-y: auto; /* Allow scrolling within the modal */
+    overflow-y: auto;
 }
 
 .modal-content h2 {

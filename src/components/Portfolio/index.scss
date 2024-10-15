@@ -1,3 +1,7 @@
+body {
+    background-color: #282828; /* Ensure body background matches modal background */
+}
+
 .portfolio-page {
     padding-left: 100px;
     padding-right: 50px;
@@ -53,13 +57,18 @@
     color: #ccc;
 }
 
+/* Prevent body scroll when modal is open */
+.no-scroll {
+    overflow: hidden;
+}
+
 .calculator-modal {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: transparent; /* No darker background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,8 +77,8 @@
 }
 
 .modal-content {
-    background-color: #282828;
-    padding: 30px;
+    background-color: #282828; /* Matching background */
+    padding: 20px;
     border-radius: 10px;
     max-width: 900px;
     width: 90%;
@@ -78,7 +87,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    overflow-y: auto; /* Allow scrolling within the modal */
 }
 
 .modal-content h2 {
@@ -140,7 +149,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .container.resume-page,
     .portfolio-page {
         width: 100%;
         padding: 20px;
@@ -158,7 +166,6 @@
         margin: 0;
         min-height: auto;
         height: auto;
-        overflow-y: hidden;
 
         &.expanded {
             min-height: 600px;
@@ -175,7 +182,7 @@
     .modal-content h2 {
         margin: 10px;
     }
-    
+
     .modal-content p {
         margin: 10px;
     }

@@ -15,6 +15,16 @@ const Portfolio = () => {
         return () => clearTimeout(timeoutId);
     }, []);
 
+    useEffect(() => {
+        if (showCalculator) {
+            // Disable body scrolling when the modal is open
+            document.body.classList.add('no-scroll');
+        } else {
+            // Re-enable scrolling when the modal is closed
+            document.body.classList.remove('no-scroll');
+        }
+    }, [showCalculator]);
+
     const handleCardClick = () => {
         setShowCalculator(true);
         setCardExpanded(true); // Expand the card when clicked

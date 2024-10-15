@@ -29,8 +29,6 @@ const Resume = () => {
                 <GoogleDocumentViewer />
             </div>
         </div>
-
-        {/* Add the loader */}
         <Loader type="ball-scale-ripple-multiple" />
         </>
     )

@@ -26,7 +26,7 @@ const Resume = () => {
                 />
             </h1>
             <div className="resume-document">
-                <GoogleDocumentViewer />
+                <GoogleDocumentViewer className="doc-viewer"/>
             </div>
         </div>
         <Loader type="ball-scale-ripple-multiple" />

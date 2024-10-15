@@ -88,8 +88,27 @@
   }
 }
 
-@media (max-width: 750px) {
+@media screen and (max-width: 1200px) {
   .page {
-    padding-left: 40px;
+    position: initial;
+  }
+
+  .container {
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+    &.about-page,
+    &.contact-page,
+    &.resume-page {
+      .text-zone {
+        position: initial;
+        transform: none;
+        width: 100%;
+        display: block;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    }
   }
 }

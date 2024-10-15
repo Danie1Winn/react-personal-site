@@ -16,18 +16,6 @@
         font-family: 'Coolvetica';
         font-weight: 400;
 
-        &::after {
-            content: '';
-            font-family: 'La Belle Aurore';
-            color: #ebdbb2;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
-            animation: fadeIn 1s 1.7s backwards;
-            opacity: 0.6;
-        }
-
         img {
             width: 42px;
             margin-left: 15px;
@@ -72,3 +60,25 @@
     
 }
 
+@media screen and (max-width: 1200px) {
+    .home-page {
+        .text-zone {
+            position: initial;
+            width: 100%;
+            transform: none;
+            padding: 10px;
+            box-sizing: border-box;
+
+            h1 {
+                font-size: 48px;
+            }
+        }
+
+        .flat-button {
+            float: none;
+            display: block;
+            margin: 20px auto 0 auto;
+            width: 125px;
+        }
+    }
+}

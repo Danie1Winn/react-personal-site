@@ -40,6 +40,7 @@
 
 .container.about-page,
 .container.contact-page,
+.container.portfolio-page,
 .container.resume-page {
 
     h1 {
@@ -100,7 +101,8 @@
 
     &.about-page,
     &.contact-page,
-    &.resume-page {
+    &.resume-page,
+    &.portfolio-page {
       .text-zone {
         position: initial;
         transform: none;

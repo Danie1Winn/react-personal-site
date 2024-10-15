@@ -1,0 +1,30 @@
+.portfolio-page {
+    padding-left: 100px;
+    padding-right: 50px;
+    width: calc(100% - 150px);
+    position: initial;
+    height: 100%;
+    overflow: auto;
+
+    h1.page-title {
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+
+    h2 {
+        color: #ebdbb2;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container.resume-page {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+
+        h1.page-title {
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+    }
+}

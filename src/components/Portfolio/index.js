@@ -5,9 +5,10 @@ import AnimatedLetters from '../AnimatedLetters';
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const [showCalculator, setShowCalculator] = useState(false); // Fuel Mix Calculator modal
-    const [showCarGame, setShowCarGame] = useState(false); // Car Game modal
-    const [cardExpanded, setCardExpanded] = useState(false); // State for card expansion
+    const [showCalculator, setShowCalculator] = useState(false);
+    const [showCarGame, setShowCarGame] = useState(false);
+    const [showSaeDataVis, setShowSaeDataVis] = useState(false);
+    const [cardExpanded, setCardExpanded] = useState(false);
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
@@ -17,18 +18,20 @@ const Portfolio = () => {
     }, []);
 
     useEffect(() => {
-        if (showCalculator || showCarGame) {
+        if (showCalculator || showCarGame || showSaeDataVis) {
             document.body.classList.add('no-scroll');
         } else {
             document.body.classList.remove('no-scroll');
         }
-    }, [showCalculator, showCarGame]);
+    }, [showCalculator, showCarGame, showSaeDataVis]);
 
     const handleCardClick = (app) => {
         if (app === 'calculator') {
             setShowCalculator(true);
         } else if (app === 'carGame') {
             setShowCarGame(true);
+        } else if (app === 'saeDataVis') {
+            setShowSaeDataVis(true);
         }
         setCardExpanded(true);
     };
@@ -36,6 +39,7 @@ const Portfolio = () => {
     const handleCloseModal = () => {
         setShowCalculator(false);
         setShowCarGame(false);
+        setShowSaeDataVis(false);
         setCardExpanded(false);
     };
 
@@ -55,6 +59,16 @@ const Portfolio = () => {
                         idx={15}
                     />
                 </h1>
+                
+                <div
+                    className={`project-card ${cardExpanded ? 'expanded' : ''}`}
+                    onClick={() => handleCardClick('saeDataVis')}
+                >
+                    <div className="card-content">
+                        <h2>SAE-DataVis</h2>
+                        <p>A WiP project management and vehicle telemetry visualization suite for use by CSULB's SAE team.</p>
+                    </div>
+                </div>
 
                 <div
                     className={`project-card ${cardExpanded ? 'expanded' : ''}`}
@@ -90,6 +104,7 @@ const Portfolio = () => {
                                 width="100%"
                                 height="600px"
                                 style={{ border: 'none' }}
+                                title="Fuel Mix Calculator"
                             />
                         </div>
                     </div>
@@ -108,6 +123,27 @@ const Portfolio = () => {
                                 width="100%"
                                 height="600px"
                                 style={{ border: 'none' }}
+                                title="Car Game"
+                            />
+                        </div>
+                    </div>
+                )}
+
+                {showSaeDataVis && (
+                    <div className="calculator-modal" onClick={handleModalClick}>
+                        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                            <button className="close-button" onClick={handleCloseModal}>×</button>
+                            <h2>SAE-DataVis</h2>
+                            <p>
+                                A web-based application for visualizing and analyzing telemetry data 
+                                from the SAE Baja race car.
+                            </p>
+                            <iframe
+                                src="https://sae-datavis.web.app"
+                                width="100%"
+                                height="600px"
+                                style={{ border: 'none' }}
+                                title="SAE Data Visualization Project"
                             />
                         </div>
                     </div>

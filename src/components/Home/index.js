@@ -41,7 +41,7 @@ const Home = () => {
                 strArray={studentArray}
                 idx={36} />
                 </h1>
-                <h2>Aspiring Software Engineer / Web Developer</h2>
+                <h2>Aspiring Software Engineer with an interest in hardware.</h2>
                 <Link to="/contact" className='flat-button'>
                     CONTACT ME
                 </Link>
